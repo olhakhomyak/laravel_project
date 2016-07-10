@@ -1,0 +1,9 @@
+#div1:hover, #div2:hover, #div3:hover, #div4:hover {
+    outline: 8px solid silver;
+    opacity: 1;
+    transition: 1s ease;
+}
+
+a:hover {
+    cursor: pointer;
+}

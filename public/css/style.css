@@ -1,0 +1,137 @@
+/*----------------main----------------*/
+body {
+    background-color: dimgrey;
+    font-family: cambria;
+}
+
+footer {
+    position: fixed;
+}
+
+footer {
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 25px;
+    background-color: firebrick;
+    opacity: 0.75;
+    color: ivory;
+}
+
+title {
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+input {
+    background-color: lightgrey;
+}
+
+
+
+
+/*---------------userForm------------*/
+#userForm {
+    position: fixed;
+    width: 400px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    padding: 10px;
+    border: 5px solid #292929;
+    outline: 3px solid grey;
+    text-align: center;
+    opacity: 0.97;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: lightgrey;
+    background-image: url(http://a66c7b.medialib.glogster.com/media/25/25622c801214e5dff0be0cbf1e25094f683af0f948a872da11ffb99e88668d49/film-strip-2-png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alert {
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -150px;
+    padding: 20px;
+    border: 2px dotted white;
+    text-align: center;
+    font-weight: bold;
+    background-color: firebrick;
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+
+
+
+/*-----------div collection--------------*/
+#container {
+    width: 100%;
+    height: 86vh;
+}
+
+#div1, #div2, #div3, #div4 {
+    box-sizing: border-box;
+    float: left;
+    width: 49%;
+    height: 50%;
+    border: 1px solid #292929;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.75;
+    transition: 1s ease;
+    color: whitesmoke;
+}
+
+.textCover {
+    position: relative;
+    width: 250px;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -130px;
+    padding: 10px;
+    text-align: center;
+    border: 2px dotted white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: firebrick;
+    opacity: 0.8;
+}
+
+
+/*----------backgrounds-------------*/
+#div1, #collection {
+    background-image: url(http://66.media.tumblr.com/tumblr_m13zqb1LD91qefe8go1_1280.jpg);
+}
+#div2, #rating {
+    background-image: url(http://www.nonsolocinema.com/wp/wp-content/uploads/2004/01/cinema.jpg);
+}
+#div3, #upcoming {
+    background-image: url(http://static.tumblr.com/1ff874fdb576e180a18995f09e26f5a5/xplfywy/pLAnrkzwy/tumblr_static_3bf5glxdmayo0ggs8csg0k8ws.jpg);
+}
+#div4, #about {
+    background-image: url(http://cdn.ahmetiscan.web.tr/wp-content/uploads/2014/10/sinema-salonu.jpg);
+}
+
+
+
+/*--------- menu pages -----------*/
+#collection, #rating, #upcoming, #about {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
