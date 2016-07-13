@@ -11,18 +11,24 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index') -> name('FirstPage');
+Route::get('/', 'HomeController@welcome')->name('FirstPage');
 
-Route::post('/', 'WelcomeController@index') -> name('FirstPage');
+Route::post('/', 'HomeController@welcome')->name('FirstPage');
 
-Route::post('authentication', 'AuthController@index') -> name('Auth');
+Route::get('main', 'HomeController@main')->name('MainPage');
 
-Route::get('main', 'MainController@index') -> name('MainPage');
+Route::get('collection', 'HomeController@collection')->name('Collection');
 
-Route::get('collection', 'CollectionController@index') -> name('Collection');
+Route::get('rating', 'HomeController@rating')->name('Rating');
 
-Route::get('rating', 'RatingController@index') -> name('Rating');
+Route::get('upcoming', 'HomeController@upcoming')->name('Upcoming');
 
-Route::get('upcoming', 'UpcomingController@index') -> name('Upcoming');
+Route::auth();
 
-Route::get('about', 'AboutController@index') -> name('About');
+Route::get('/home', 'HomeController@index')->name('Home');
+
+Route::get('contact', 'HomeController@create')->name('contact');
+
+Route::post('contact', 'HomeController@store')->name('contact_store');
+
+Route::get('email-sent/{Feedback}', 'HomeController@emailSent')->name('user.email.show');

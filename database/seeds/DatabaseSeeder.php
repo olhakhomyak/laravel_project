@@ -14,3 +14,11 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
     }
 }
+
+
+class PostsSeeder extends Seeder {
+    public function run()
+    {
+        
+    }
+}
