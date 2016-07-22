@@ -12,17 +12,24 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        'e40631d46120a9c38ea139981f8dab26' => __DIR__ . '/..' . '/ircmaxell/password-compat/lib/password.php',
+        'edc6464955a37aa4d5fbf39d40fb6ee7' => __DIR__ . '/..' . '/symfony/polyfill-php55/bootstrap.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
+        '3375eb69ad3c4d68490f1e205fa24798' => __DIR__ . '/..' . '/laravel-doctrine/orm/src/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'Z' => 
+        array (
+            'Zizaco\\Entrust\\' => 15,
         ),
         'X' => 
         array (
@@ -36,10 +43,12 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
             'Symfony\\Polyfill\\Php56\\' => 23,
+            'Symfony\\Polyfill\\Php55\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Serializer\\' => 29,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\Process\\' => 26,
             'Symfony\\Component\\HttpKernel\\' => 29,
@@ -56,6 +65,7 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         array (
             'Psy\\' => 4,
             'PhpParser\\' => 10,
+            'PHPZen\\LaravelRbac\\' => 19,
         ),
         'M' => 
         array (
@@ -64,6 +74,7 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         'L' => 
         array (
             'League\\Flysystem\\' => 17,
+            'LaravelDoctrine\\ORM\\' => 20,
         ),
         'I' => 
         array (
@@ -77,6 +88,8 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         array (
             'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\' => 16,
         ),
         'C' => 
         array (
@@ -97,6 +110,10 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
             1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
+        'Zizaco\\Entrust\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/zizaco/entrust/src/Entrust',
+        ),
         'XdgBaseDir\\' => 
         array (
             0 => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src',
@@ -113,6 +130,10 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php56',
         ),
+        'Symfony\\Polyfill\\Php55\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php55',
+        ),
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
@@ -128,6 +149,10 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Symfony\\Component\\Serializer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/serializer',
         ),
         'Symfony\\Component\\Routing\\' => 
         array (
@@ -181,6 +206,10 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'PHPZen\\LaravelRbac\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpzen/laravel-rbac/src',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -188,6 +217,10 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         'League\\Flysystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/flysystem/src',
+        ),
+        'LaravelDoctrine\\ORM\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel-doctrine/orm/src',
         ),
         'Illuminate\\' => 
         array (
@@ -204,6 +237,14 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
         ),
         'Collective\\Html\\' => 
         array (
@@ -255,9 +296,29 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         ),
         'D' => 
         array (
+            'Doctrine\\ORM\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/orm/lib',
+            ),
+            'Doctrine\\DBAL\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
+            ),
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
             'Doctrine\\Common\\Inflector\\' => 
             array (
                 0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
+            'Doctrine\\Common\\Collections\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/collections/lib',
+            ),
+            'Doctrine\\Common\\Annotations\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
             ),
         ),
         'C' => 
@@ -270,10 +331,21 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
     );
 
     public static $classMap = array (
+        'AddPosts' => __DIR__ . '/../..' . '/database/migrations/2016_07_17_120036_add_posts.php',
+        'AlterUsersTableAddPhoneNumberColumn' => __DIR__ . '/../..' . '/database/migrations/2016_07_19_102149_alter_users_table_add_phone_number_column.php',
+        'ChangeUser' => __DIR__ . '/../..' . '/database/migrations/2016_07_18_144600_change_user.php',
+        'ChangeUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_18_145241_change_users_table.php',
+        'CreateFailedJobsTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_17_225542_create_failed_jobs_table.php',
         'CreateFeedbacksTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_13_093716_create_feedbacks_table.php',
+        'CreateJobsTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_17_225433_create_jobs_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+        'CreatePermissionRoleTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_01_154441_create_permission_role_table.php',
+        'CreatePermissionsTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_01_150253_create_permissions_table.php',
+        'CreateRoleUserTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_01_145745_create_role_user_table.php',
+        'CreateRolesTable' => __DIR__ . '/../..' . '/database/migrations/2016_01_01_145345_create_roles_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
+        'DropJobsTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_19_102720_drop_jobs_table.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
@@ -780,6 +852,7 @@ class ComposerStaticInita6a884de433639f5b2a696c6af120c66
         'SebastianBergmann\\Version' => __DIR__ . '/..' . '/sebastian/version/src/Version.php',
         'TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
+        'Zizaco\\Entrust\\MigrationCommand' => __DIR__ . '/..' . '/zizaco/entrust/src/commands/MigrationCommand.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

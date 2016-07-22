@@ -19,7 +19,7 @@ Route::get('main', 'HomeController@main')->name('MainPage');
 
 Route::get('collection', 'HomeController@collection')->name('Collection');
 
-Route::get('rating', 'HomeController@rating')->name('Rating');
+Route::get('rating', 'EventsController@getEvents')->name('Rating');
 
 Route::get('upcoming', 'HomeController@upcoming')->name('Upcoming');
 
@@ -32,3 +32,17 @@ Route::get('contact', 'HomeController@create')->name('contact');
 Route::post('contact', 'HomeController@store')->name('contact_store');
 
 Route::get('email-sent/{Feedback}', 'HomeController@emailSent')->name('user.email.show');
+
+Route::resource('posts', 'PostController');
+
+Route::get('/posts/{postId}/destroy', 'PostController@destroy')->name('posts.delete')->middleware('admin');
+
+Route::get('/language', 'LanguageController@chooser')->name('language-chooser');
+
+Route::post('events/{eventId}/subscribe', 'EventsController@subscribeToEvent')->name('event.subscribe');
+
+Route::get('admin/events/create', 'AdminController@createEvent')->name('admin.createEvent')->middleware('admin');
+
+Route::get('admin/events/show-all-subscribers', 'EventsController@showAllSubscribers')->name('showAllSubscribers');
+
+Route::post('admin/events/store', 'AdminController@storeEvent')->name('admin.storeEvent')->middleware('admin');

@@ -1,9 +1,13 @@
-@extends('layouts.contact')
+@extends('layouts.app')
+
+@section('title')
+    {{ trans('messages.Discussion') }}
+@endsection
+
+@section('bg')
+    upcoming
+@endsection
 
 @section('content')
-    <div id="content">
-        <div id="text_field">
-            <p> Some content for this page </p>
-        </div>
-    </div>
+
 @endsection

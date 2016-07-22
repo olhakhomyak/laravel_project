@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Entities\Feedback;
 use App\Http\Requests;
 use App\Http\Requests\ContactFormRequest;
+use App\Services\EmailService;
 use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
@@ -85,27 +86,32 @@ class HomeController extends Controller
      * @param ContactFormRequest $request
      * @return mixed
      */
-    public function store(ContactFormRequest $request)
-    {
-        $feedback = Feedback::create($request->all());
-        
-        Mail::send('pages.email', [
-            'feedback' => $feedback
-        ], function ($m) use ($feedback) {
-            $m->from('user@mail.com');
-            $m->to($feedback->email);
-        });
-        
-        return \Redirect::route('user.email.show', [
-            'Feedback' => $feedback
-        ]);
-    }
+        public function store(ContactFormRequest $request, EmailService $emailService)
+        {
+            $feedback = Feedback::create($request->all());
+            $emailService->sendEmail($feedback);
+            
+            return \Redirect::route('user.email.show', [
+                'Feedback' => $feedback
+            ]);
+        }
 
-    public function emailSent(Feedback $feedback) 
-    {
-        return view('pages.email_sent', [
-            'feedback' => $feedback
-        ]);
+    /**
+     * @param Feedback $feedback
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+        public function emailSent(Feedback $feedback) 
+        {
+            return view('pages.email_sent', [
+                'feedback' => $feedback
+            ]);
+        }
+    
+    
+        public function addPost() {
+            $posts = Post::get();
+            
+            return view('pages.upcoming')->with('posts', $posts);
+        }
     }
-}
 

@@ -6,10 +6,21 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddPosts' => $baseDir . '/database/migrations/2016_07_17_120036_add_posts.php',
+    'AlterUsersTableAddPhoneNumberColumn' => $baseDir . '/database/migrations/2016_07_19_102149_alter_users_table_add_phone_number_column.php',
+    'ChangeUser' => $baseDir . '/database/migrations/2016_07_18_144600_change_user.php',
+    'ChangeUsersTable' => $baseDir . '/database/migrations/2016_07_18_145241_change_users_table.php',
+    'CreateFailedJobsTable' => $baseDir . '/database/migrations/2016_07_17_225542_create_failed_jobs_table.php',
     'CreateFeedbacksTable' => $baseDir . '/database/migrations/2016_07_13_093716_create_feedbacks_table.php',
+    'CreateJobsTable' => $baseDir . '/database/migrations/2016_07_17_225433_create_jobs_table.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
+    'CreatePermissionRoleTable' => $baseDir . '/database/migrations/2016_01_01_154441_create_permission_role_table.php',
+    'CreatePermissionsTable' => $baseDir . '/database/migrations/2016_01_01_150253_create_permissions_table.php',
+    'CreateRoleUserTable' => $baseDir . '/database/migrations/2016_01_01_145745_create_role_user_table.php',
+    'CreateRolesTable' => $baseDir . '/database/migrations/2016_01_01_145345_create_roles_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
+    'DropJobsTable' => $baseDir . '/database/migrations/2016_07_19_102720_drop_jobs_table.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
@@ -516,4 +527,5 @@ return array(
     'SebastianBergmann\\Version' => $vendorDir . '/sebastian/version/src/Version.php',
     'TestCase' => $baseDir . '/tests/TestCase.php',
     'Text_Template' => $vendorDir . '/phpunit/php-text-template/src/Template.php',
+    'Zizaco\\Entrust\\MigrationCommand' => $vendorDir . '/zizaco/entrust/src/commands/MigrationCommand.php',
 );

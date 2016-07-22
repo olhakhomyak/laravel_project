@@ -25,7 +25,8 @@ class ContactFormRequest extends Request
     {
         return [
             'email' => 'required|email',
-            'message' => 'required'
+            'message' => 'required|min:3|max:20'
+
         ];
     }
 }

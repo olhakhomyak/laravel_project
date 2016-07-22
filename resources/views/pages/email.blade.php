@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Email</title>
 </head>
 <body>
         <h2>{{ $feedback->email }}</h2>

@@ -1,8 +1,10 @@
 <?php
 
-namespace App;
+namespace App\Entities;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use PHPZen\LaravelRbac\Traits\Rbac;
+use \App\Entities\Events;
 
 class User extends Authenticatable
 {
@@ -23,4 +25,11 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function events()
+    {
+        return $this->belongsToMany(Events::class);
+    }
 }
+
+

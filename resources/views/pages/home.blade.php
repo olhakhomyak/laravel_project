@@ -1,15 +1,18 @@
 @extends('layouts.app')
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
+@section('title')
+    {{ trans('messages.Home') }}
+@endsection
 
-                </div>
+@section('bg')
+    about
+@endsection
+
+@section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
             </div>
         </div>
     </div>
-</div>
-
-
 @endsection

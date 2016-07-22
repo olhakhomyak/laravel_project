@@ -1,21 +1,46 @@
 /*----------------main----------------*/
-#body {
-    background-color: dimgrey;
-    font-family: cambria;
+/*body {*/
+    /*background-image: */
+    /*background-size: cover;*/
+/*}*/
+
+#navbar {
+    top: 0;
+    font-size: 25px;
+    opacity: 0.82;
+    background-color: firebrick;
+    padding: 5px;
+    color: whitesmoke !important;
 }
 
-#header {
-    height: 10vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    text-align: center;
-    font-size: 25px;
-    background-color: firebrick;
-    opacity: 0.75;
-    color: ivory;
-    position: fixed;
+body {
+    background: url("http://upload.akusherstvo.ru/image1079389.jpg") center no-repeat fixed;
+    background-size: cover;
 }
+
+
+#body {
+    background: url("http://upload.akusherstvo.ru/image1079389.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+#event {
+    background: url("https://www.case.edu/events/media/caseedu/events/images/Calendar-2152x1413.jpg") center no-repeat fixed;
+    background-size: cover;
+}
+
+/*#header {*/
+    /*height: 10vh;*/
+    /*width: 100%;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*text-align: center;*/
+    /*/
+    /**/
+    /**/
+    /*color: ivory;*/
+    /*position: fixed;*/
+/*}*/
 
 title {
     text-align: center;
@@ -24,34 +49,33 @@ title {
 #a{
     color: white;
     text-decoration: none;
-    font-family: cambria;
 }
 
 #a:hover {
     opacity: 1.0;
     font-weight: 600;
+    color: white;
+    text-decoration: none;
 }
-
-
 
 /*---------------userForm------------*/
 #userForm {
-    position: fixed;
-    width: 800px;
-    height: 100vh;
-    left: 50%;
-    margin-left: -400px;
-    padding: 10px;
-    border: 5px solid #292929;
-    outline: 3px solid grey;
-    text-align: center;
+    border: 5px solid lightcyan;
     font-size: 17px;
     font-weight: bold;
-    background-color: lightgrey;
-    background-image: url(http://a66c7b.medialib.glogster.com/media/25/25622c801214e5dff0be0cbf1e25094f683af0f948a872da11ffb99e88668d49/film-strip-2-png.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.9;
+    background-color: #c4e3f3;
+    opacity: 0.96;
+    color: whitesmoke;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #337ab7;
+}
+
+.form-control {
+    background-color: whitesmoke !important;
+    background-image: none !important;
 }
 
 .alert {
@@ -78,27 +102,29 @@ title {
     position: absolute;
 }
 
+
 #div1, #div2, #div3, #div4 {
-    box-sizing: border-box;
-    float: left;
-    width: 49%;
-    height: 50%;
-    border: 1px solid #292929;
-    margin: 5px;
+    background-color: #2ca02c;
+    height: 50vh;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.75;
+    opacity: 0.95;
     transition: 1s ease;
-    color: whitesmoke;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+
+#div1:hover, #div2:hover, #div3:hover, #div4:hover {
+    outline: 2px solid silver;
+    opacity: 1;
+    transition: 1s ease;
 }
 
 .textCover {
-    position: relative;
     width: 250px;
-    left: 50%;
-    top: 50%;
-    margin-top: -30px;
-    margin-left: -130px;
     padding: 10px;
     text-align: center;
     border: 2px dotted white;
@@ -110,45 +136,60 @@ title {
 
 
 /*----------backgrounds-------------*/
-#div1, #collection {
-    background-image: url(http://66.media.tumblr.com/tumblr_m13zqb1LD91qefe8go1_1280.jpg);
-}
-#div2, #rating {
-    background-image: url(http://www.nonsolocinema.com/wp/wp-content/uploads/2004/01/cinema.jpg);
-}
-#div3, #upcoming {
-    background-image: url(http://static.tumblr.com/1ff874fdb576e180a18995f09e26f5a5/xplfywy/pLAnrkzwy/tumblr_static_3bf5glxdmayo0ggs8csg0k8ws.jpg);
-}
-#div4, #about {
-    background-image: url(http://cdn.ahmetiscan.web.tr/wp-content/uploads/2014/10/sinema-salonu.jpg);
+#collection {
+    background: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/10/analytics-1200x637.jpg") no-repeat center center fixed;
 }
 
+#rating {
+    background: url("http://3.bp.blogspot.com/-Rme70nP0iw0/VA8tFHUgfEI/AAAAAAAAAp4/fzmeMdQbJ3w/s1600/04%2BIryna%2BMorykvas%2B-%2BLviv%2BApril.jpg") no-repeat center center fixed;
+}
+
+#upcoming {
+    background: url("https://secure.static.tumblr.com/0f493b2476ba2feb961ec0f86ffa841b/qsg9b9g/iBjn7sg1f/tumblr_static_tumblerheader.png") no-repeat center center fixed;
+}
+
+ #about {
+    background: url("http://www.proreklamu.com/media/upload/news/46527/8780.jpg") no-repeat center center fixed;
+}
 
 /*--------- menu pages -----------*/
 #collection, #rating, #upcoming, #about {
-    background-repeat: no-repeat;
-    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height: 100vh;
+    background-size: cover;
+}
+
+#div1 {
+    background-image: url("http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2015/10/analytics-1200x637.jpg");
+}
+#div2 {
+    background-image: url("http://3.bp.blogspot.com/-Rme70nP0iw0/VA8tFHUgfEI/AAAAAAAAAp4/fzmeMdQbJ3w/s1600/04%2BIryna%2BMorykvas%2B-%2BLviv%2BApril.jpg");
+}
+
+#div3 {
+    background-image: url("https://secure.static.tumblr.com/0f493b2476ba2feb961ec0f86ffa841b/qsg9b9g/iBjn7sg1f/tumblr_static_tumblerheader.png");
+}
+
+#div4 {
+    background-image: url("http://www.proreklamu.com/media/upload/news/46527/8780.jpg");
 }
 
 
 /*--------------pages content --------------*/
-#content {
-    left: 50%;
-    height: 100vh;
-    width: 800px;
-    margin-left: -400px;
-    background-image: url(http://a66c7b.medialib.glogster.com/media/25/25622c801214e5dff0be0cbf1e25094f683af0f948a872da11ffb99e88668d49/film-strip-2-png.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.86;
-    position: fixed;
-    background-color: #9d9d9d;
-    text-align: center;
-}
+/*#content {*/
+    /*left: 50%;*/
+    /*height: 100vh;*/
+    /*width: 800px;*/
+    /*margin-left: -400px;*/
+    /*background-image: url(http://a66c7b.medialib.glogster.com/media/25/25622c801214e5dff0be0cbf1e25094f683af0f948a872da11ffb99e88668d49/film-strip-2-png.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*opacity: 0.86;*/
+    /*position: fixed;*/
+    /*background-color: #9d9d9d;*/
+    /*text-align: center;*/
+/*}*/
 
 #text_field {
     top: 200px;
@@ -157,3 +198,217 @@ title {
     font-size: 20px;
 }
 
+.btn {
+    margin-top: 10px;
+}
+
+
+
+
+@import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+body {
+    background-color: rgb(220, 220, 220);
+}
+
+.event-list {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+.event-list > li {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(51, 51, 51);
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+    padding: 0px;
+    margin: 0px 0px 20px;
+    border-radius: 10px;
+}
+.event-list > li > time {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(197, 44, 102);
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.event-list > li:nth-child(even) > time {
+    background-color: rgb(165, 82, 167);
+}
+.event-list > li > time > span {
+    display: none;
+}
+.event-list > li > time > .day {
+    display: block;
+    font-size: 56pt;
+    font-weight: 100;
+    line-height: 1;
+}
+.event-list > li time > .month {
+    display: block;
+    font-size: 24pt;
+    font-weight: 900;
+    line-height: 1;
+}
+.event-list > li > img {
+    width: 100%;
+}
+.event-list > li > .info {
+    padding-top: 5px;
+    text-align: center;
+}
+.event-list > li > .info > .title {
+    font-size: 17pt;
+    font-weight: 700;
+    margin: 0px;
+}
+.event-list > li > .info > .desc {
+    font-size: 13pt;
+    font-weight: 300;
+    margin: 0px;
+}
+.event-list > li > .info > ul,
+.event-list > li > .social > ul {
+    display: table;
+    list-style: none;
+    margin: 10px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+}
+.event-list > li > .social > ul {
+    margin: 0px;
+}
+.event-list > li > .info > ul > li,
+.event-list > li > .social > ul > li {
+    display: table-cell;
+    cursor: pointer;
+    color: rgb(30, 30, 30);
+    font-size: 11pt;
+    font-weight: 300;
+    padding: 3px 0px;
+}
+.event-list > li > .info > ul > li > a {
+    display: block;
+    width: 100%;
+    color: rgb(30, 30, 30);
+    text-decoration: none;
+}
+.event-list > li > .social > ul > li {
+    padding: 0px;
+}
+.event-list > li > .social > ul > li > a {
+    padding: 3px 0px;
+}
+.event-list > li > .info > ul > li:hover,
+.event-list > li > .social > ul > li:hover {
+    color: rgb(30, 30, 30);
+    background-color: rgb(200, 200, 200);
+}
+.facebook a,
+.twitter a,
+.google-plus a {
+    display: block;
+    width: 100%;
+    color: rgb(75, 110, 168) !important;
+}
+.twitter a {
+    color: rgb(79, 213, 248) !important;
+}
+.google-plus a {
+    color: rgb(221, 75, 57) !important;
+}
+.facebook:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(75, 110, 168) !important;
+}
+.twitter:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(79, 213, 248) !important;
+}
+.google-plus:hover a {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(221, 75, 57) !important;
+}
+
+@media (min-width: 768px) {
+    .event-list > li {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 120px;
+        padding: 0px;
+    }
+    .event-list > li > time,
+    .event-list > li > img  {
+        display: inline-block;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        float: left;
+    }
+    .event-list > li > .info {
+        background-color: rgb(245, 245, 245);
+        overflow: hidden;
+    }
+    .event-list > li > time,
+    .event-list > li > img {
+        width: 120px;
+        height: 120px;
+        padding: 0px;
+        margin: 0px;
+    }
+    .event-list > li > .info {
+        position: relative;
+        height: 120px;
+        text-align: left;
+        padding-right: 40px;
+    }
+    .event-list > li > .info > .title,
+    .event-list > li > .info > .desc {
+        padding: 0px 10px;
+    }
+    .event-list > li > .info > ul {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .event-list > li > .social {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        display: block;
+        width: 40px;
+    }
+    .event-list > li > .social > ul {
+        border-left: 1px solid rgb(230, 230, 230);
+    }
+    .event-list > li > .social > ul > li {
+        display: block;
+        padding: 0px;
+    }
+    .event-list > li > .social > ul > li > a {
+        display: block;
+        width: 40px;
+        padding: 10px 0px 9px;
+    }
+    .modal-backdrop {
+        position: relative !important;
+
+    }
+    .modal-dialog {
+        top: 100px;
+        color: #337ab7;
+    }
+
+    .info > ul > li:hover {
+        background-color: inherit !important;
+    }
+
+    .modal-content {
+        background-color: #d9edf7 !important;
+    }
+}

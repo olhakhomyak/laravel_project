@@ -31,8 +31,13 @@ class Kernel extends HttpKernel
             \App\Http\Middleware\VerifyCsrfToken::class,
         ],
 
+        'admin' => [
+            \App\Http\Middleware\AuthAdmin::class,
+        ],
+
         'api' => [
-            'throttle:60,1',
+//            \App\Http\Middleware\AllowOrigin::class,
+            //'throttle:60,1',
         ],
     ];
 
@@ -44,10 +49,15 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \App\Http\Middleware\Authenticate::class,
+        'auth'       => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
-        'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'can'        => \Illuminate\Foundation\Http\Middleware\Authorize::class,
+        'guest'      => \App\Http\Middleware\RedirectIfAuthenticated::class,
+        'throttle'   => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'role'       => \Zizaco\Entrust\Middleware\EntrustRole::class,
+        'permission' => \Zizaco\Entrust\Middleware\EntrustPermission::class,
+        'ability'    => \Zizaco\Entrust\Middleware\EntrustAbility::class,
+        'is_admin'   => \App\Http\Middleware\AuthAdmin::class,
+        'locale'     => \App\Http\Middleware\Language_chooser::class,
     ];
 }
